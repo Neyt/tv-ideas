@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Proyecto Tv · Lo aprendido el 25-nov-2026</title>
+<title>Proyecto Tv · Costos: lo que tenemos y lo que falta</title>
 <style>
 :root{--bg:#0f1720;--panel:#18222e;--line:#263444;--tx:#e8eef5;--mut:#8fa1b5;--g:#38c28b;--y:#f2b84b;--r:#ef6a5b;--b:#4ea1ff}
 *{box-sizing:border-box}
@@ -24,162 +24,118 @@ h2{font-size:20px;margin:0 0 4px}
 .bars .track{background:#0c141c;border-radius:6px;height:20px;overflow:hidden}
 .bars .fill{height:100%;border-radius:6px}
 .bars .v{text-align:right;font-weight:700}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.st{background:#101a24;border:1px solid var(--line);border-top:4px solid var(--b);border-radius:10px;padding:14px;font-size:14px}
-.st:nth-child(2){border-top-color:var(--g)}.st:nth-child(3){border-top-color:var(--y)}.st:nth-child(4){border-top-color:var(--r)}
-.st b{display:block;font-size:16px;margin-bottom:4px}
-.st em{display:block;font-style:normal;color:var(--mut);font-size:13px;margin-top:8px}
 table{width:100%;border-collapse:collapse;font-size:14px}
 th,td{padding:9px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
 th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+td.n{text-align:right;white-space:nowrap;font-weight:700}
 .t{font-size:11px;font-weight:700;border-radius:4px;padding:2px 6px;white-space:nowrap}
 .t.l{background:#16382c;color:var(--g)}.t.c{background:#12392b;color:#6ff0b6}.t.gu{background:#3d3012;color:var(--y)}.t.n{background:#3d1a16;color:var(--r)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 ul{margin:6px 0 0;padding-left:20px}li{margin:4px 0}
 .formula{background:#0c141c;border:1px dashed var(--y);border-radius:10px;padding:14px;font-size:17px;text-align:center;margin:10px 0}
 .warn{border-left:4px solid var(--r);padding:8px 12px;background:#2a1a1a;border-radius:6px;font-size:14px;margin-top:10px}
+.ok{border-left:4px solid var(--g);padding:8px 12px;background:#14271f;border-radius:6px;font-size:14px;margin-top:10px}
 .todo{counter-reset:n}.todo li{list-style:none;position:relative;padding-left:34px;margin:8px 0}
 .todo li:before{counter-increment:n;content:counter(n);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--b);color:#06121f;font-weight:800;text-align:center;line-height:24px;font-size:13px}
 footer{color:var(--mut);font-size:12px;margin-top:26px}
-@media(max-width:800px){.kpis{grid-template-columns:1fr 1fr}.steps,.two{grid-template-columns:1fr}.bars .row{grid-template-columns:1fr 70px}.bars .track{grid-column:1/3}h1{font-size:26px}}
+@media(max-width:800px){.kpis{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.bars .row{grid-template-columns:1fr 70px}.bars .track{grid-column:1/3}h1{font-size:26px}table{font-size:13px}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="kick">Proyecto Tv · panel de arranque</div>
-  <h1>Lo que aprendimos hoy</h1>
-  <p class="sub">25-nov-2026 · Meta: tropicalizar formatos que ya funcionan afuera, probar con pilotos baratos y escalar solo lo que da retorno.</p>
+  <div class="kick">Proyecto Tv · presupuesto</div>
+  <h1>Costos: lo que tenemos y lo que falta</h1>
+  <p class="sub">25-nov-2026 · Para ver con Choco. Objetivo: llegar a un presupuesto claro de la prueba de 12 capítulos antes de gastar un dólar.</p>
 
   <div class="kpis">
-    <div class="kpi"><b class="g">USD 175</b><span>Media hora, franja baja (aire)</span></div>
-    <div class="kpi"><b class="y">USD 2.100</b><span>12 capítulos de prueba, solo aire</span></div>
-    <div class="kpi"><b class="r">USD 9.600</b><span>Estudio del canal, 12 horas</span></div>
-    <div class="kpi"><b class="b">USD 0–500</b><span>Piloto en segmento, por canje</span></div>
+    <div class="kpi"><b class="b">USD 175</b><span>Media hora de aire, franja baja</span></div>
+    <div class="kpi"><b class="y">USD 2.100</b><span>12 capítulos de aire, franja baja</span></div>
+    <div class="kpi"><b class="r">USD 9.600</b><span>Estudio del canal, 12 horas a USD 800</span></div>
+    <div class="kpi"><b class="g">USD 11.700</b><span>Aire + estudio, sin producción ni edición</span></div>
   </div>
 
   <div class="panel">
-    <div class="kick">El método</div>
-    <h2>Tropicalizar, probar, escalar</h2>
-    <p class="sub">Del consejo de Eduardo (Soy Emprendedor): toma algo que ya existe, que sea fácil de entender y que la gente ya conozca.</p>
-    <div class="steps">
-      <div class="st"><b>1 · Elegir formato</b>Funciona afuera, no es copia exacta de uno local y se explica en una frase.<em>Costo: horas de investigación</em></div>
-      <div class="st"><b>2 · Piloto mínimo</b>Un segmento en un programa existente o 4 capítulos digitales. Código propio por programa.<em>USD 0–500 [Guessing]</em></div>
-      <div class="st"><b>3 · Prueba de 12 capítulos</b>Solo con concepto y presupuesto en papel. Aire en franja baja.<em>≈ USD 2.100 + producción [Likely]</em></div>
-      <div class="st"><b>4 · Escalar</b>Contrato de 6 meses o canal con más exposición. Solo si el cliente cuesta menos que el margen.<em>Sin cotizar</em></div>
-    </div>
-  </div>
-
-  <div class="panel">
-    <div class="kick">Cuánto cuesta cada etapa</div>
-    <h2>Dónde está el dinero en riesgo</h2>
-    <p class="sub">Cifras verbales del productor de ECTV; falta el tarifario escrito.</p>
-    <div class="bars">
-      <div class="row"><span>Segmento en programa (canje)</span><div class="track"><div class="fill" style="width:4%;background:var(--g)"></div></div><span class="v g">0–500</span></div>
-      <div class="row"><span>Aire 12 capítulos, franja baja</span><div class="track"><div class="fill" style="width:18%;background:var(--b)"></div></div><span class="v b">2.100</span></div>
-      <div class="row"><span>Estudio del canal, 12 horas</span><div class="track"><div class="fill" style="width:82%;background:var(--y)"></div></div><span class="v y">9.600</span></div>
-      <div class="row"><span>Aire + estudio del canal</span><div class="track"><div class="fill" style="width:100%;background:var(--r)"></div></div><span class="v r">11.700</span></div>
-    </div>
-    <div class="warn">No incluye productor, asistente, edición ni gráficos. Sin esos costos, el retorno no se calcula.</div>
-  </div>
-
-  <div class="panel">
-    <div class="kick">Cómo gana plata este negocio</div>
-    <h2>Dos modelos que vimos hoy</h2>
-    <div class="two">
-      <div>
-        <b>Productor que alquila el espacio</b>
-        <ul>
-          <li>Es dueño del programa y le alquila el espacio al canal.</li>
-          <li>Cobra por participar: de ~USD 1.000 a ~USD 10.000 por participación en Soy Emprendedor <span class="t gu">Likely</span></li>
-          <li>Suma posicionamiento de producto: los jueces consumen el producto en cámara.</li>
-          <li>Grabación: un día = 3 o 4 episodios.</li>
-        </ul>
-      </div>
-      <div>
-        <b>Coproductor de un espacio del canal</b>
-        <ul>
-          <li>El canal pone equipos y personal operativo.</li>
-          <li>Tú pones productor, chef, ingredientes y copresentador.</li>
-          <li>Hueco abierto hoy: el espacio de cocina.</li>
-          <li>Caso del canal: un cliente vende ollas de USD 150–200 a provincias y renueva cada año <span class="t gu">Likely</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel">
-    <div class="kick">Qué sabemos del canal</div>
-    <h2>Tarifas y reglas (verbales)</h2>
+    <div class="kick">Lo que ya tenemos</div>
+    <h2>Tarifas del canal (dichas en reunión, no por escrito)</h2>
     <table>
-      <tr><th>Tema</th><th>Dato</th><th>Confianza</th></tr>
-      <tr><td>Aire, 1 hora</td><td>Baja 350 · media 700 · franja AAA (18–22 h) hasta 1.200</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Estudio</td><td>USD 800/hora con equipo y personal operativo; sin productor, edición ni gráficos</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Equipo de estudio</td><td>10 a 12 personas</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Rating</td><td>No hay medición; se vende cobertura nacional. El retorno se mide con códigos o enlaces por programa</td><td><span class="t gu">Likely</span></td></tr>
+      <tr><th>Rubro</th><th>Dato</th><th>Confianza</th></tr>
+      <tr><td>Aire, franja baja</td><td>USD 175 media hora · USD 350 la hora</td><td><span class="t gu">Likely</span></td></tr>
+      <tr><td>Aire, franja media</td><td>USD 700 la hora</td><td><span class="t gu">Likely</span></td></tr>
+      <tr><td>Aire, franja AAA (18–22 h)</td><td>Hasta USD 1.200 la hora</td><td><span class="t gu">Likely</span></td></tr>
+      <tr><td>Estudio del canal</td><td>USD 800 la hora, con equipo y personal operativo</td><td><span class="t gu">Likely</span></td></tr>
+      <tr><td>Equipo de un estudio dinámico</td><td>10 a 12 personas</td><td><span class="t gu">Likely</span></td></tr>
       <tr><td>Entrega</td><td>1920×1080; un celular nuevo sirve si imagen y sonido son buenos</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Contenido</td><td>Sin religión ni ideología</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Consejo</td><td>Concepto y presupuesto en papel, luego 12 capítulos y después 6 meses</td><td><span class="t c">Certain</span></td></tr>
-      <tr><td>Alerta</td><td>Un productor vendió a municipios a USD 700 por capítulo, se quedó sin plata en el tercero y quedó como incumplido</td><td><span class="t c">Certain</span></td></tr>
-      <tr><td>USD 80.000 la hora (Eduardo)</td><td>Lo dijo de pasada, "o lo que sea"; no es tarifa</td><td><span class="t gu">Guessing</span></td></tr>
+      <tr><td>Medición</td><td>No hay rating; el retorno se mide con códigos o enlaces por programa</td><td><span class="t gu">Likely</span></td></tr>
     </table>
   </div>
 
+  <div class="panel bars">
+    <div class="kick">Dónde está el dinero</div>
+    <h2>Prueba de 12 capítulos, lo que ya se puede sumar</h2>
+    <div class="row"><span>Aire, franja baja (12 × 175)</span><div class="track"><div class="fill" style="width:18%;background:var(--b)"></div></div><span class="v b">2.100</span></div>
+    <div class="row"><span>Estudio (12 h × 800)</span><div class="track"><div class="fill" style="width:82%;background:var(--y)"></div></div><span class="v y">9.600</span></div>
+    <div class="row"><span>Total conocido</span><div class="track"><div class="fill" style="width:100%;background:var(--r)"></div></div><span class="v r">11.700</span></div>
+    <div class="warn">Faltan productor, edición, gráficos, talento e IVA. USD 11.700 es el piso, no el presupuesto.</div>
+  </div>
+
   <div class="panel">
-    <div class="kick">Para cerrar costos</div>
-    <h2>Franjas y precios que hay que preguntar a la jefa</h2>
+    <div class="kick">Escenarios</div>
+    <h2>Cuánto sube si el estudio cobra más horas por capítulo</h2>
+    <p class="sub">12 capítulos de media hora, aire en franja baja. Las horas por capítulo son supuestos nuestros <span class="t gu">Guessing</span>: falta que el canal diga cómo cobra el montaje.</p>
     <table>
-      <tr><th>Franja</th><th>Lo que tenemos</th><th>Lo que falta preguntar</th><th>Estado</th></tr>
-      <tr><td>Baja (tarde/madrugada)</td><td>Media hora USD 175; 1 hora USD 350</td><td>Horario exacto, días, y si el paquete de 12 capítulos tiene descuento</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Media</td><td>1 hora USD 700</td><td>Horario exacto y precio de media hora</td><td><span class="t n">Preguntar</span></td></tr>
-      <tr><td>AAA (18–22 h)</td><td>1 hora hasta USD 1.200</td><td>Precio fijo (no "hasta"), media hora y cupos libres</td><td><span class="t n">Preguntar</span></td></tr>
-      <tr><td>Fin de semana</td><td>Nada</td><td>Si cambia la tarifa y qué horarios hay sábado y domingo</td><td><span class="t n">Preguntar</span></td></tr>
-      <tr><td>Estudio, USD 800/hora</td><td>800 por hora con equipo y personal operativo</td><td>Si se cobra por hora grabada o por hora de estudio con montaje; cuántas horas por capítulo; mínimo de horas</td><td><span class="t gu">Likely</span></td></tr>
-      <tr><td>Extras</td><td>Nada</td><td>IVA, repeticiones, comisión de agencia y quién cobra la coproducción</td><td><span class="t n">Preguntar</span></td></tr>
+      <tr><th>Escenario</th><th>Horas de estudio por capítulo</th><th class="n">Estudio</th><th class="n">Aire</th><th class="n">Total</th></tr>
+      <tr><td>Mínimo</td><td>1 hora</td><td class="n">9.600</td><td class="n">2.100</td><td class="n g">11.700</td></tr>
+      <tr><td>Probable</td><td>1,5 horas</td><td class="n">14.400</td><td class="n">2.100</td><td class="n y">16.500</td></tr>
+      <tr><td>Alto</td><td>2 horas</td><td class="n">19.200</td><td class="n">2.100</td><td class="n r">21.300</td></tr>
     </table>
-    <div class="warn">Con USD 800/hora, la prueba de 12 capítulos cuesta USD 9.600 de estudio si cada capítulo usa 1 hora. Si el estudio cobra el montaje, sube. Sin esa respuesta, el presupuesto es un piso, no un techo.</div>
+    <div class="ok">Alternativa barata: un piloto en segmento, por canje, cuesta USD 0 a 500 y dice si hay clientes antes de pagar estudio. <span class="t gu">Guessing</span></div>
   </div>
 
   <div class="panel">
-    <div class="kick">Ideas para correr</div>
-    <h2>Candidatas, de mejor a peor encaje</h2>
+    <div class="kick">Lo que nos falta</div>
+    <h2>Preguntas que cierran el presupuesto</h2>
     <table>
-      <tr><th>#</th><th>Idea</th><th>Piloto</th><th>Riesgo</th></tr>
-      <tr><td>1</td><td><b>Reto Liviano</b> como segmento en un programa médico diario (pesaje y seguimiento en enero)</td><td>USD 0–500 en cortesías <span class="t gu">Guessing</span></td><td>Decide la productora; diciembre está saturado</td></tr>
-      <tr><td>2</td><td><b>Cocina saludable en coproducción</b></td><td>Aire por negociar; chef e ingredientes a tu cargo <span class="t n">No confirmado</span></td><td>Necesitas productor propio</td></tr>
-      <tr><td>3</td><td><b>Enlatado propio</b> grabado en La Pradera, franja baja</td><td>USD 2.100 de aire + producción <span class="t gu">Likely</span></td><td>Poca audiencia en esa franja</td></tr>
-      <tr><td>4</td><td><b>Auspicio de Liviano</b> en pastillas de bienestar en radio</td><td>Sin cotizar <span class="t n">No confirmado</span></td><td>Es radio, no TV</td></tr>
-      <tr><td>5</td><td><b>Turismo</b> (operadores, millas, esotérico)</td><td>Mínimo 15 días y 4 personas, con patrocinio previo</td><td>Costo alto sin sponsor</td></tr>
-      <tr><td>6</td><td><b>Negocios en venta</b> (CompraVenta360)</td><td>USD 2–5 mil <span class="t gu">Guessing</span></td><td>Confidencialidad</td></tr>
-      <tr><td>7</td><td>Concurso de familias, microdrama vertical, reality completo</td><td>USD 3–15 mil o sin cotizar <span class="t gu">Guessing</span></td><td>Pagar todo sin probar</td></tr>
+      <tr><th>Rubro</th><th>Qué hay que saber</th><th>A quién</th><th>Estado</th></tr>
+      <tr><td>Franja media</td><td>Horario exacto y precio de media hora</td><td>Jefa del canal</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Franja AAA</td><td>Precio fijo (no "hasta"), media hora y cupos libres</td><td>Jefa del canal</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Franja baja</td><td>Horario exacto, días y descuento por paquete de 12</td><td>Jefa del canal</td><td><span class="t gu">Parcial</span></td></tr>
+      <tr><td>Fin de semana</td><td>Si cambia la tarifa y qué horarios hay</td><td>Jefa del canal</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Estudio</td><td>Si los USD 800 son por hora grabada o con montaje; horas por capítulo; mínimo de horas</td><td>Jefa del canal</td><td><span class="t gu">Parcial</span></td></tr>
+      <tr><td>Extras del canal</td><td>IVA, repeticiones, comisión de agencia y quién cobra la coproducción</td><td>Jefa del canal</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Productor y asistente</td><td>Cotización por capítulo, con contrato de entrega</td><td>Productores</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Edición y gráficos</td><td>Costo por capítulo</td><td>Editor</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Talento</td><td>Honorarios o participación en ventas de quien conduce</td><td>Choco</td><td><span class="t n">Falta</span></td></tr>
+      <tr><td>Margen por venta</td><td>Cuánto queda libre por cada venta del producto</td><td>Ney</td><td><span class="t n">Falta</span></td></tr>
     </table>
-    <div class="warn">Dato de contexto: los encargos de reality en Latinoamérica cayeron 49% entre el primer semestre de 2025 y el de 2026 (Ampere Analysis). El reality completo es lo más caro de probar.</div>
   </div>
 
   <div class="panel">
-    <div class="kick">La regla de oro</div>
+    <div class="kick">Cómo decidimos</div>
     <h2>Retorno antes de gastar</h2>
-    <div class="formula">Ventas necesarias = (aire + producción) ÷ margen por venta de Liviano</div>
-    <ul>
-      <li><b>Compuerta:</b> no pagar estudio del canal (≈ USD 9.600) hasta que un piloto barato muestre un costo por cliente menor al margen.</li>
-      <li><b>Medición:</b> código o enlace único por programa. No hay rating.</li>
-      <li><b>Restricción:</b> un estudio dinámico exige 10 a 12 personas; la producción se terceriza.</li>
-      <li><b>Pendiente clave:</b> el margen de Liviano no está en la base. Sin él, no hay ROI calculable.</li>
-    </ul>
+    <div class="formula">Ventas necesarias = (aire + producción) ÷ margen por venta</div>
+    <p class="sub">Ejemplo con el total mínimo de USD 11.700. Los márgenes son ilustrativos <span class="t gu">Guessing</span>.</p>
+    <table>
+      <tr><th>Si el margen por venta fuera</th><th class="n">Ventas para recuperar USD 11.700</th></tr>
+      <tr><td>USD 50</td><td class="n">234</td></tr>
+      <tr><td>USD 100</td><td class="n">117</td></tr>
+      <tr><td>USD 200</td><td class="n">59</td></tr>
+    </table>
+    <div class="warn">Regla: no pagar el estudio del canal hasta que un piloto barato muestre un costo por cliente menor al margen. Alerta del medio: un productor vendió capítulos a precio bajo, se quedó sin plata en el tercero y quedó como incumplido. Por eso el presupuesto completo va antes que el primer capítulo.</div>
   </div>
 
   <div class="panel">
-    <div class="kick">Qué falta y qué sigue</div>
+    <div class="kick">Qué sigue</div>
     <h2>Próximos pasos</h2>
     <ol class="todo" style="margin:10px 0 0;padding:0">
-      <li>Pedir por escrito el tarifario y las condiciones de coproducción a la gerencia comercial del canal.</li>
-      <li>Una página de pitch del segmento Reto Liviano para la planificación del viernes 27-nov.</li>
-      <li>Calcular el margen de Liviano para fijar el costo máximo aceptable por cliente.</li>
-      <li>Presupuesto de la prueba de 12 capítulos en tres escenarios.</li>
-      <li>Pedir cotización de productor y asistente cuando exista el concepto en papel.</li>
+      <li>Enviar a la jefa del canal las preguntas de franjas y estudio, y pedir el tarifario por escrito.</li>
+      <li>Calcular el margen por venta para fijar el costo máximo aceptable por cliente.</li>
+      <li>Pedir cotización de productor, edición y gráficos cuando exista el concepto en papel.</li>
+      <li>Hablar con Choco del esquema de talento: honorario fijo o participación.</li>
+      <li>Con las respuestas, cerrar el presupuesto de los 12 capítulos en tres escenarios.</li>
     </ol>
   </div>
 
-  <footer>Fuentes: reuniones del 25-nov-2026 (datos verbales, sin documento del canal), nota de voz de Eduardo Monje, y el estudio de tendencias del proyecto Tv (Ampere Analysis, Nielsen 2026, prensa local). Etiquetas: Certain = dicho en la reunión; Likely = cifra verbal; Guessing = estimación mía; No confirmado = falta verificar.</footer>
+  <footer>Fuentes: reuniones del 25-nov-2026 (datos verbales, sin documento del canal). Etiquetas: Certain = dicho en la reunión; Likely = cifra verbal; Guessing = estimación nuestra; Falta = sin dato todavía.</footer>
 </div>
 </body>
 </html>
